@@ -4,14 +4,15 @@ import ButtonLarge from '@/components/button/ButtonLarge';
 
 interface ButtonProps {
   type: string;
-  text: string;
   src: any;
+  text?: string;
+  background?: string;
 }
 
-const Button = ({ type, text, src }: ButtonProps) => {
+const Button = ({ type, src, text = '', background = '' }: ButtonProps) => {
   switch (type) {
     case 'small':
-      return <ButtonSmall text={text} src={src} />;
+      return <ButtonSmall src={src} background={background} />;
     case 'medium':
       return <ButtonMedium text={text} src={src} />;
     case 'large':
