@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+
+  height: 40px;
+
+  border: 1px solid #606060;
+  box-sizing: border-box;
+  border-radius: 25px;
+
+  background-color: unset;
+
+  > * + * {
+    margin-left: 6px;
+  }
+
+  .text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
