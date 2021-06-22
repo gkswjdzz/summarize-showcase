@@ -1,5 +1,9 @@
 @import 'reset.css';
 
+button {
+  all: unset;
+}
+
 html,
 body {
   padding: 0;
