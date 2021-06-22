@@ -1,0 +1,11 @@
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  .buttons {
+    display: flex;
+    gap: 32px;
+  }
+}
