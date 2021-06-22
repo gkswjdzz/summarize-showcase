@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  border-bottom: solid 1px #606060;
+
+  .logoAndTitles {
+    flex: 1;
+    display: flex;
+    margin-left: 42px;
+
+    .titles {
+      margin-left: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .links {
+    display: flex;
+    margin-right: 56px;
+
+    > * + * {
+      margin-left: 8px;
+    }
+  }
+}
